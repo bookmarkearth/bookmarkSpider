@@ -124,7 +124,9 @@ class MainSpider(Parser):
 
                             #print('uid %s %s' %(uid,url))
                             while self.request_queue.qsize()>0:
+
                                 url, parms = self.request_queue.get()
+
                                 ##只对种子url做处理
                                 if url.startswith("http://"):
                                     yield scrapy.Request(
@@ -161,7 +163,8 @@ class MainSpider(Parser):
 
             yield page
 
-            # 直接返回，强制返回2层结果
+            # 直接返回，强制返回2层结果，节约硬盘
+
             depth = response.meta.get('depth')
             if depth and 0==depth:
                 # copy, 防止再次请求没法释放内存
