@@ -1,0 +1,12 @@
+elasticsearch==8.12.0
+lxml==4.9.3
+Protego~=0.3.0
+numpy~=1.24.2
+Scrapy~=2.11.0
+tldextract~=5.1.0
+pymongo~=4.6.1
+redis~=4.5.4
+simhash~=2.1.2
+w3lib~=2.1.2
+requests~=2.31.0
+Twisted~=22.10.0
