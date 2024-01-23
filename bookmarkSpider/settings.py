@@ -154,7 +154,7 @@ MY_USER_AGENT = [
 MYSQL_HOST = '127.0.0.1'
 MYSQL_DBNAME = 'bookmarkchina'         #数据库名字，请修改
 MYSQL_USER = 'root'             #数据库账号，请修改
-MYSQL_PASSWD = 'yours'         #数据库密码，请修改
+MYSQL_PASSWD = 'root'         #数据库密码，请修改
 MYSQL_PORT = 3306               #数据库端口，在dbhelper中使用
 
 #ELASTICSEARCH配置信息
@@ -167,7 +167,7 @@ NUMBER_OF_SHARDS = 1
 MONGODB_HOST = "127.0.0.1"
 MONGODB_PORT = 27017
 MONGODB_USERNAME = 'root'
-MONGODB_PASSWORD='yours'
+MONGODB_PASSWORD='root'
 MONGODB_SOURCE="admin"
 MONGODB_DBNAME = "bookmarkearth"
 
@@ -182,4 +182,4 @@ MONGO_TABLE_COUNT_RECORD="count_record"
 ##redis
 REDIS_SERVER_HOST="127.0.0.1"
 REDIS_SERVER_PORT=6379
-REDIS_SERVER_PASSWORD="yours"
+REDIS_SERVER_PASSWORD="123456"

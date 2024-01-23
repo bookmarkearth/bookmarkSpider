@@ -1,6 +1,6 @@
 import time
 
-from numpy import long
+from numpy import int64
 from scrapy.exceptions import DropItem
 
 ##敏感词过滤
@@ -115,13 +115,13 @@ class ElasticsearchPipeline(object):
         template.keywords="".join(item['keywords'])
         template.description="".join(item['description'])
         template.url=item['url']
-        template.size=long(item['size'])
+        template.size=int64(item['size'])
         template.host=item['host']
-        template.bookmark_id=long(item['bookmark_id'])
-        template.folder_id=long(item['folder_id'])
+        template.bookmark_id=int64(item['bookmark_id'])
+        template.folder_id=int64(item['folder_id'])
         template.referer=item['referer']
-        template.create_at=long(int(round(time.time() * 1000)))
-        template.update_at=long(int(round(time.time() * 1000)))
+        template.create_at=int64(int(round(time.time() * 1000)))
+        template.update_at=int64(int(round(time.time() * 1000)))
         template.meta.id=id
 
         #处理body
