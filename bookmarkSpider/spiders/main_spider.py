@@ -158,6 +158,9 @@ class MainSpider(Parser):
         if not isinstance(response, TextResponse):
             yield None
 
+        if response.status != 200:
+            yield  None
+
         page = super(MainSpider, self)._get_item(response)
         if page:
 
